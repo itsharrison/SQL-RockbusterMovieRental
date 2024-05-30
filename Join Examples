@@ -1,4 +1,4 @@
-# This query looks for the top 10 countries with the highest revenue
+-- This query looks for the top 10 countries with the highest revenue
 SELECT DISTINCT country, SUM(amount) AS total_amount_paid
 FROM
 payment A
@@ -10,7 +10,7 @@ GROUP BY country
 ORDER BY total_amount_paid DESC
 LIMIT 10
 
-# This query lists all genres and their revenue
+-- This query lists all genres and their revenue
 SELECT E.name, SUM(amount) AS total_amount_paid
 FROM
 payment A
@@ -21,7 +21,7 @@ INNER JOIN category E ON D.category_id = E.category_id
 GROUP BY E.name
 ORDER BY total_amount_paid DESC
 
-# This query looks for the top 10 cities in the top 10 countries with the highest customer counts
+-- This query looks for the top 10 cities in the top 10 countries with the highest customer counts
 SELECT C.city, D.country,
 COUNT (A.customer_id) AS number_of_customers
 FROM customer A
