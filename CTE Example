@@ -1,5 +1,4 @@
 -- This query lists the top 10 cities with the highest customer counts, their customer counts, the counts of the customers who spent the most, and where they are located in those cites
-
 WITH top_5_customers_cte (customer_id, first_name, last_name, country, city) AS 
 (SELECT A.customer_id, B.first_name, B.last_name, E.country, D.city, SUM(A.amount) AS  
 total_amount_paid  
