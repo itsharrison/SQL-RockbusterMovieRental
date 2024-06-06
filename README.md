@@ -14,11 +14,11 @@ Rockbuster Stealth LLC is a movie rental company that used to have stores around
 ## Data Set
 [Rockbuster Data Set Link](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip)
 ## Tools
-● PostgreSQL      
-● Tableau     
-● Excel    
-● PowerPoint    
-● Word   
+● PostgreSQL (Data Analysis)     
+● Tableau (Visualizations)   
+● Excel (Data Analysis)
+● PowerPoint (Presentation)   
+● Word (Data Dictionary)
 ## Project Deliverables
 ● Present my SQL results by creating a data dictionary.   
 ● Create visulizations and tell a compelling story.
