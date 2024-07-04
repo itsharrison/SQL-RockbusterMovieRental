@@ -1,3 +1,4 @@
+~~~SQL
 -- This query looks for the top 5 customers who paid the most, which countries they live in, and how many customers those countries have
 SELECT D.country, COUNT(DISTINCT A.customer_id) AS all_customer_count, COUNT(top_5_customers) AS 
 top_customer_count 
@@ -39,3 +40,4 @@ ON A.customer_id = top_5_customers.customer_id
 GROUP BY D.country 
 ORDER BY all_customer_count DESC 
 LIMIT 5
+~~~
