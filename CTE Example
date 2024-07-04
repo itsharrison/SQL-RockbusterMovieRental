@@ -1,3 +1,4 @@
+~~~SQL
 -- This query lists the top 10 cities with the highest customer counts, their customer counts, the counts of the customers who spent the most, and where they are located in those cites
 WITH top_5_customers_cte (customer_id, first_name, last_name, country, city) AS 
 (SELECT A.customer_id, B.first_name, B.last_name, E.country, D.city, SUM(A.amount) AS  
@@ -38,4 +39,5 @@ INNER JOIN country D ON C.country_id = D.country_id
 LEFT JOIN  top_5_customers_cte ON D.country = top_5_customers_cte.country
 GROUP BY D.country  
 ORDER BY all_customer_count DESC  
-LIMIT 10 
+LIMIT 10
+~~~
